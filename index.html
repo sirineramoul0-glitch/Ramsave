@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramsave</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    .search {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: #22c55e;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background: #22c55e;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>🍔 Ramsave</header>
+
+<div class="container">
+
+  <div class="search">
+    <input type="text" placeholder="🔍 Rechercher un restaurant...">
+  </div>
+
+  <h2>🔥 Offres disponibles</h2>
+
+  <div class="card">
+    <div class="title">🥐 Boulangerie Blida</div>
+    <p>Pain + croissants invendus</p>
+    <p class="price">150 DA au lieu de 300 DA</p>
+    <a class="btn" onclick="commander('Boulangerie Blida')">Commander</a>
+  </div>
+
+  <div class="card">
+    <div class="title">🍕 Pizzeria Express</div>
+    <p>Pizza restante du soir</p>
+    <p class="price">400 DA au lieu de 700 DA</p>
+    <a class="btn" onclick="commander('Pizzeria Express')">Commander</a>
+  </div>
+
+  <div class="card">
+    <div class="title">🍗 Fast Food DZ</div>
+    <p>Menu poulet fin de journée</p>
+    <p class="price">500 DA au lieu de 800 DA</p>
+    <a class="btn" onclick="commander('Fast Food DZ')">Commander</a>
+  </div>
+
+  <h2>📞 Contact</h2>
+  <a class="btn" href="https://wa.me/213XXXXXXXXX">WhatsApp</a>
+
+  <div class="footer">
+    Ramsave © 2026 - Anti gaspillage alimentaire en Algérie 🇩🇿
+  </div>
+
+</div>
+
+<script>
+function commander(nom) {
+  alert("Commande envoyée pour : " + nom);
+}
+</script>
+
+</body>
+</html>
